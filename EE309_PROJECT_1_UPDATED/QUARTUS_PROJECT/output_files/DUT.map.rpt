@@ -1,0 +1,511 @@
+Analysis & Elaboration report for DUT
+Sat May 07 23:32:55 2022
+Quartus Prime Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. Analysis & Elaboration Summary
+  3. Parallel Compilation
+  4. Parameter Settings for User Entity Instance: datapath:processor|alu:alu_element|adder:ADD0
+  5. Parameter Settings for User Entity Instance: datapath:processor|alu:alu_element|adder:ADD0|carry_generater:\carry_element:0:CARRYX
+  6. Parameter Settings for User Entity Instance: datapath:processor|alu:alu_element|adder:ADD0|carry_generater:\carry_element:1:CARRYX
+  7. Parameter Settings for User Entity Instance: datapath:processor|alu:alu_element|adder:ADD0|carry_generater:\carry_element:2:CARRYX
+  8. Parameter Settings for User Entity Instance: datapath:processor|alu:alu_element|adder:ADD0|carry_generater:\carry_element:3:CARRYX
+  9. Analysis & Elaboration Settings
+ 10. Port Connectivity Checks: "datapath:processor|mux4to1:a3_mux"
+ 11. Port Connectivity Checks: "datapath:processor|mux2to1:a2_mux"
+ 12. Port Connectivity Checks: "datapath:processor|mux2to1:a1_mux"
+ 13. Port Connectivity Checks: "datapath:processor|alu:alu_element|adder:ADD0"
+ 14. Port Connectivity Checks: "datapath:processor|alu:alu_element"
+ 15. Port Connectivity Checks: "datapath:processor|register_set:register_file|register_16:register_7"
+ 16. Port Connectivity Checks: "datapath:processor|register_set:register_file|register_16:register_6"
+ 17. Port Connectivity Checks: "datapath:processor|register_set:register_file|register_16:register_5"
+ 18. Port Connectivity Checks: "datapath:processor|register_set:register_file|register_16:register_4"
+ 19. Port Connectivity Checks: "datapath:processor|register_set:register_file|register_16:register_3"
+ 20. Port Connectivity Checks: "datapath:processor|register_set:register_file|register_16:register_2"
+ 21. Port Connectivity Checks: "datapath:processor|register_set:register_file|register_16:register_1"
+ 22. Port Connectivity Checks: "datapath:processor|register_set:register_file|register_16:register_0"
+ 23. Port Connectivity Checks: "datapath:processor|master_controller:controller"
+ 24. Analysis & Elaboration Messages
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 2020  Intel Corporation. All rights reserved.
+Your use of Intel Corporation's design tools, logic functions 
+and other software and tools, and any partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Intel Program License 
+Subscription Agreement, the Intel Quartus Prime License Agreement,
+the Intel FPGA IP License Agreement, or other applicable license
+agreement, including, without limitation, that your use is for
+the sole purpose of programming logic devices manufactured by
+Intel and sold by Intel or its authorized distributors.  Please
+refer to the applicable agreement for further details, at
+https://fpgasoftware.intel.com/eula.
+
+
+
++-----------------------------------------------------------------------------+
+; Analysis & Elaboration Summary                                              ;
++-------------------------------+---------------------------------------------+
+; Analysis & Elaboration Status ; Successful - Sat May 07 23:32:55 2022       ;
+; Quartus Prime Version         ; 20.1.1 Build 720 11/11/2020 SJ Lite Edition ;
+; Revision Name                 ; DUT                                         ;
+; Top-level Entity Name         ; DUT                                         ;
+; Family                        ; MAX V                                       ;
++-------------------------------+---------------------------------------------+
+
+
++------------------------------------------+
+; Parallel Compilation                     ;
++----------------------------+-------------+
+; Processors                 ; Number      ;
++----------------------------+-------------+
+; Number detected on machine ; 8           ;
+; Maximum allowed            ; 4           ;
+;                            ;             ;
+; Average used               ; 1.00        ;
+; Maximum used               ; 1           ;
+;                            ;             ;
+; Usage by Processor         ; % Time Used ;
+;     Processor 1            ; 100.0%      ;
++----------------------------+-------------+
+
+
++--------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: datapath:processor|alu:alu_element|adder:ADD0 ;
++----------------+-------+-------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                              ;
++----------------+-------+-------------------------------------------------------------------+
+; carry_length   ; 4     ; Signed Integer                                                    ;
++----------------+-------+-------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++------------------------------------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: datapath:processor|alu:alu_element|adder:ADD0|carry_generater:\carry_element:0:CARRYX ;
++----------------+-------+-----------------------------------------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                                                      ;
++----------------+-------+-----------------------------------------------------------------------------------------------------------+
+; carry_length   ; 4     ; Signed Integer                                                                                            ;
++----------------+-------+-----------------------------------------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++------------------------------------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: datapath:processor|alu:alu_element|adder:ADD0|carry_generater:\carry_element:1:CARRYX ;
++----------------+-------+-----------------------------------------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                                                      ;
++----------------+-------+-----------------------------------------------------------------------------------------------------------+
+; carry_length   ; 4     ; Signed Integer                                                                                            ;
++----------------+-------+-----------------------------------------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++------------------------------------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: datapath:processor|alu:alu_element|adder:ADD0|carry_generater:\carry_element:2:CARRYX ;
++----------------+-------+-----------------------------------------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                                                      ;
++----------------+-------+-----------------------------------------------------------------------------------------------------------+
+; carry_length   ; 4     ; Signed Integer                                                                                            ;
++----------------+-------+-----------------------------------------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++------------------------------------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: datapath:processor|alu:alu_element|adder:ADD0|carry_generater:\carry_element:3:CARRYX ;
++----------------+-------+-----------------------------------------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                                                      ;
++----------------+-------+-----------------------------------------------------------------------------------------------------------+
+; carry_length   ; 4     ; Signed Integer                                                                                            ;
++----------------+-------+-----------------------------------------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++------------------------------------------------------------------------------------------------------------+
+; Analysis & Elaboration Settings                                                                            ;
++------------------------------------------------------------------+--------------------+--------------------+
+; Option                                                           ; Setting            ; Default Value      ;
++------------------------------------------------------------------+--------------------+--------------------+
+; Device                                                           ; 5M1270ZT144C5      ;                    ;
+; Top-level entity name                                            ; DUT                ; DUT                ;
+; Family name                                                      ; MAX V              ; Cyclone V          ;
+; Use smart compilation                                            ; Off                ; Off                ;
+; Enable parallel Assembler and Timing Analyzer during compilation ; On                 ; On                 ;
+; Enable compact report table                                      ; Off                ; Off                ;
+; Restructure Multiplexers                                         ; Auto               ; Auto               ;
+; Create Debugging Nodes for IP Cores                              ; Off                ; Off                ;
+; Preserve fewer node names                                        ; On                 ; On                 ;
+; Intel FPGA IP Evaluation Mode                                    ; Enable             ; Enable             ;
+; Verilog Version                                                  ; Verilog_2001       ; Verilog_2001       ;
+; VHDL Version                                                     ; VHDL_1993          ; VHDL_1993          ;
+; State Machine Processing                                         ; Auto               ; Auto               ;
+; Safe State Machine                                               ; Off                ; Off                ;
+; Extract Verilog State Machines                                   ; On                 ; On                 ;
+; Extract VHDL State Machines                                      ; On                 ; On                 ;
+; Ignore Verilog initial constructs                                ; Off                ; Off                ;
+; Iteration limit for constant Verilog loops                       ; 5000               ; 5000               ;
+; Iteration limit for non-constant Verilog loops                   ; 250                ; 250                ;
+; Add Pass-Through Logic to Inferred RAMs                          ; On                 ; On                 ;
+; Infer RAMs from Raw Logic                                        ; On                 ; On                 ;
+; Parallel Synthesis                                               ; On                 ; On                 ;
+; NOT Gate Push-Back                                               ; On                 ; On                 ;
+; Power-Up Don't Care                                              ; On                 ; On                 ;
+; Remove Redundant Logic Cells                                     ; Off                ; Off                ;
+; Remove Duplicate Registers                                       ; On                 ; On                 ;
+; Ignore CARRY Buffers                                             ; Off                ; Off                ;
+; Ignore CASCADE Buffers                                           ; Off                ; Off                ;
+; Ignore GLOBAL Buffers                                            ; Off                ; Off                ;
+; Ignore ROW GLOBAL Buffers                                        ; Off                ; Off                ;
+; Ignore LCELL Buffers                                             ; Off                ; Off                ;
+; Ignore SOFT Buffers                                              ; On                 ; On                 ;
+; Limit AHDL Integers to 32 Bits                                   ; Off                ; Off                ;
+; Optimization Technique                                           ; Balanced           ; Balanced           ;
+; Carry Chain Length                                               ; 70                 ; 70                 ;
+; Auto Carry Chains                                                ; On                 ; On                 ;
+; Auto Open-Drain Pins                                             ; On                 ; On                 ;
+; Perform WYSIWYG Primitive Resynthesis                            ; Off                ; Off                ;
+; Auto Shift Register Replacement                                  ; Auto               ; Auto               ;
+; Allow Shift Register Merging across Hierarchies                  ; Auto               ; Auto               ;
+; Auto Clock Enable Replacement                                    ; On                 ; On                 ;
+; Allow Synchronous Control Signals                                ; On                 ; On                 ;
+; Force Use of Synchronous Clear Signals                           ; Off                ; Off                ;
+; Auto Resource Sharing                                            ; Off                ; Off                ;
+; Use LogicLock Constraints during Resource Balancing              ; On                 ; On                 ;
+; Ignore translate_off and synthesis_off directives                ; Off                ; Off                ;
+; Report Parameter Settings                                        ; On                 ; On                 ;
+; Report Source Assignments                                        ; On                 ; On                 ;
+; Report Connectivity Checks                                       ; On                 ; On                 ;
+; Ignore Maximum Fan-Out Assignments                               ; Off                ; Off                ;
+; Synchronization Register Chain Length                            ; 2                  ; 2                  ;
+; Power Optimization During Synthesis                              ; Normal compilation ; Normal compilation ;
+; HDL message level                                                ; Level2             ; Level2             ;
+; Suppress Register Optimization Related Messages                  ; Off                ; Off                ;
+; Number of Removed Registers Reported in Synthesis Report         ; 5000               ; 5000               ;
+; Number of Swept Nodes Reported in Synthesis Report               ; 5000               ; 5000               ;
+; Number of Inverted Registers Reported in Synthesis Report        ; 100                ; 100                ;
+; Clock MUX Protection                                             ; On                 ; On                 ;
+; Block Design Naming                                              ; Auto               ; Auto               ;
+; Synthesis Effort                                                 ; Auto               ; Auto               ;
+; Shift Register Replacement - Allow Asynchronous Clear Signal     ; On                 ; On                 ;
+; Analysis & Synthesis Message Level                               ; Medium             ; Medium             ;
+; Disable Register Merging Across Hierarchies                      ; Auto               ; Auto               ;
++------------------------------------------------------------------+--------------------+--------------------+
+
+
++-------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "datapath:processor|mux4to1:a3_mux"                                                           ;
++---------------+--------+----------+-------------------------------------------------------------------------------------+
+; Port          ; Type   ; Severity ; Details                                                                             ;
++---------------+--------+----------+-------------------------------------------------------------------------------------+
+; output[15..3] ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
++---------------+--------+----------+-------------------------------------------------------------------------------------+
+
+
++-------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "datapath:processor|mux2to1:a2_mux"                                                           ;
++---------------+--------+----------+-------------------------------------------------------------------------------------+
+; Port          ; Type   ; Severity ; Details                                                                             ;
++---------------+--------+----------+-------------------------------------------------------------------------------------+
+; output[15..3] ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
++---------------+--------+----------+-------------------------------------------------------------------------------------+
+
+
++-------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "datapath:processor|mux2to1:a1_mux"                                                           ;
++---------------+--------+----------+-------------------------------------------------------------------------------------+
+; Port          ; Type   ; Severity ; Details                                                                             ;
++---------------+--------+----------+-------------------------------------------------------------------------------------+
+; output[15..3] ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
++---------------+--------+----------+-------------------------------------------------------------------------------------+
+
+
++-----------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "datapath:processor|alu:alu_element|adder:ADD0"                                             ;
++-------------+--------+----------+-------------------------------------------------------------------------------------+
+; Port        ; Type   ; Severity ; Details                                                                             ;
++-------------+--------+----------+-------------------------------------------------------------------------------------+
+; cout[14..0] ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
++-------------+--------+----------+-------------------------------------------------------------------------------------+
+
+
++----------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "datapath:processor|alu:alu_element"                                                 ;
++------+--------+----------+-------------------------------------------------------------------------------------+
+; Port ; Type   ; Severity ; Details                                                                             ;
++------+--------+----------+-------------------------------------------------------------------------------------+
+; cy   ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
++------+--------+----------+-------------------------------------------------------------------------------------+
+
+
++----------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "datapath:processor|register_set:register_file|register_16:register_7"               ;
++------+--------+----------+-------------------------------------------------------------------------------------+
+; Port ; Type   ; Severity ; Details                                                                             ;
++------+--------+----------+-------------------------------------------------------------------------------------+
+; q    ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
++------+--------+----------+-------------------------------------------------------------------------------------+
+
+
++----------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "datapath:processor|register_set:register_file|register_16:register_6"               ;
++------+--------+----------+-------------------------------------------------------------------------------------+
+; Port ; Type   ; Severity ; Details                                                                             ;
++------+--------+----------+-------------------------------------------------------------------------------------+
+; q    ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
++------+--------+----------+-------------------------------------------------------------------------------------+
+
+
++----------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "datapath:processor|register_set:register_file|register_16:register_5"               ;
++------+--------+----------+-------------------------------------------------------------------------------------+
+; Port ; Type   ; Severity ; Details                                                                             ;
++------+--------+----------+-------------------------------------------------------------------------------------+
+; q    ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
++------+--------+----------+-------------------------------------------------------------------------------------+
+
+
++----------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "datapath:processor|register_set:register_file|register_16:register_4"               ;
++------+--------+----------+-------------------------------------------------------------------------------------+
+; Port ; Type   ; Severity ; Details                                                                             ;
++------+--------+----------+-------------------------------------------------------------------------------------+
+; q    ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
++------+--------+----------+-------------------------------------------------------------------------------------+
+
+
++----------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "datapath:processor|register_set:register_file|register_16:register_3"               ;
++------+--------+----------+-------------------------------------------------------------------------------------+
+; Port ; Type   ; Severity ; Details                                                                             ;
++------+--------+----------+-------------------------------------------------------------------------------------+
+; q    ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
++------+--------+----------+-------------------------------------------------------------------------------------+
+
+
++----------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "datapath:processor|register_set:register_file|register_16:register_2"               ;
++------+--------+----------+-------------------------------------------------------------------------------------+
+; Port ; Type   ; Severity ; Details                                                                             ;
++------+--------+----------+-------------------------------------------------------------------------------------+
+; q    ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
++------+--------+----------+-------------------------------------------------------------------------------------+
+
+
++----------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "datapath:processor|register_set:register_file|register_16:register_1"               ;
++------+--------+----------+-------------------------------------------------------------------------------------+
+; Port ; Type   ; Severity ; Details                                                                             ;
++------+--------+----------+-------------------------------------------------------------------------------------+
+; q    ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
++------+--------+----------+-------------------------------------------------------------------------------------+
+
+
++----------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "datapath:processor|register_set:register_file|register_16:register_0"               ;
++------+--------+----------+-------------------------------------------------------------------------------------+
+; Port ; Type   ; Severity ; Details                                                                             ;
++------+--------+----------+-------------------------------------------------------------------------------------+
+; q    ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
++------+--------+----------+-------------------------------------------------------------------------------------+
+
+
++------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "datapath:processor|master_controller:controller"                                                  ;
++--------------------+--------+----------+-------------------------------------------------------------------------------------+
+; Port               ; Type   ; Severity ; Details                                                                             ;
++--------------------+--------+----------+-------------------------------------------------------------------------------------+
+; control_signals[0] ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
++--------------------+--------+----------+-------------------------------------------------------------------------------------+
+
+
++---------------------------------+
+; Analysis & Elaboration Messages ;
++---------------------------------+
+Info: *******************************************************************
+Info: Running Quartus Prime Analysis & Elaboration
+    Info: Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition
+    Info: Processing started: Sat May 07 23:32:45 2022
+Info: Command: quartus_map --read_settings_files=on --write_settings_files=off IITB_RISC_PROCESSOR -c DUT --analysis_and_elaboration
+Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
+Info (20030): Parallel compilation is enabled and will use 4 of the 4 processors detected
+Info (12021): Found 2 design units, including 1 entities, in source file dut.vhd
+    Info (12022): Found design unit 1: DUT-processor_instance File: D:/Downloads/EE309_PROJECT_1_UPDATED/QUARTUS_PROJECT/DUT.vhd Line: 7
+    Info (12023): Found entity 1: DUT File: D:/Downloads/EE309_PROJECT_1_UPDATED/QUARTUS_PROJECT/DUT.vhd Line: 3
+Info (12021): Found 2 design units, including 1 entities, in source file rs.vhd
+    Info (12022): Found design unit 1: Reg_Sel-Registorselector File: D:/Downloads/EE309_PROJECT_1_UPDATED/QUARTUS_PROJECT/RS.vhd Line: 11
+    Info (12023): Found entity 1: Reg_sel File: D:/Downloads/EE309_PROJECT_1_UPDATED/QUARTUS_PROJECT/RS.vhd Line: 4
+Info (12021): Found 2 design units, including 1 entities, in source file fsm.vhd
+    Info (12022): Found design unit 1: master_controller-rch File: D:/Downloads/EE309_PROJECT_1_UPDATED/QUARTUS_PROJECT/FSM.vhd Line: 14
+    Info (12023): Found entity 1: master_controller File: D:/Downloads/EE309_PROJECT_1_UPDATED/QUARTUS_PROJECT/FSM.vhd Line: 5
+Info (12021): Found 2 design units, including 1 entities, in source file framework.vhdl
+    Info (12022): Found design unit 1: framework-a1 File: D:/Downloads/EE309_PROJECT_1_UPDATED/QUARTUS_PROJECT/Framework.vhdl Line: 23
+    Info (12023): Found entity 1: framework File: D:/Downloads/EE309_PROJECT_1_UPDATED/QUARTUS_PROJECT/Framework.vhdl Line: 4
+Info (12021): Found 2 design units, including 1 entities, in source file alu.vhdl
+    Info (12022): Found design unit 1: alu-behave File: D:/Downloads/EE309_PROJECT_1_UPDATED/QUARTUS_PROJECT/alu.vhdl Line: 16
+    Info (12023): Found entity 1: alu File: D:/Downloads/EE309_PROJECT_1_UPDATED/QUARTUS_PROJECT/alu.vhdl Line: 8
+Info (12021): Found 7 design units, including 3 entities, in source file adder.vhdl
+    Info (12022): Found design unit 1: add File: D:/Downloads/EE309_PROJECT_1_UPDATED/QUARTUS_PROJECT/adder.vhdl Line: 5
+    Info (12022): Found design unit 2: full_adder-basic File: D:/Downloads/EE309_PROJECT_1_UPDATED/QUARTUS_PROJECT/adder.vhdl Line: 42
+    Info (12022): Found design unit 3: carry_generater-basic File: D:/Downloads/EE309_PROJECT_1_UPDATED/QUARTUS_PROJECT/adder.vhdl Line: 63
+    Info (12022): Found design unit 4: adder-look_ahead File: D:/Downloads/EE309_PROJECT_1_UPDATED/QUARTUS_PROJECT/adder.vhdl Line: 94
+    Info (12023): Found entity 1: full_adder File: D:/Downloads/EE309_PROJECT_1_UPDATED/QUARTUS_PROJECT/adder.vhdl Line: 36
+    Info (12023): Found entity 2: carry_generater File: D:/Downloads/EE309_PROJECT_1_UPDATED/QUARTUS_PROJECT/adder.vhdl Line: 55
+    Info (12023): Found entity 3: adder File: D:/Downloads/EE309_PROJECT_1_UPDATED/QUARTUS_PROJECT/adder.vhdl Line: 85
+Info (12021): Found 2 design units, including 1 entities, in source file datapath.vhd
+    Info (12022): Found design unit 1: datapath-processor_instance File: D:/Downloads/EE309_PROJECT_1_UPDATED/QUARTUS_PROJECT/datapath.vhd Line: 11
+    Info (12023): Found entity 1: datapath File: D:/Downloads/EE309_PROJECT_1_UPDATED/QUARTUS_PROJECT/datapath.vhd Line: 4
+Info (12021): Found 2 design units, including 1 entities, in source file rf_wren.vhd
+    Info (12022): Found design unit 1: Regfile_wren-description File: D:/Downloads/EE309_PROJECT_1_UPDATED/QUARTUS_PROJECT/RF_Wren.vhd Line: 12
+    Info (12023): Found entity 1: Regfile_wren File: D:/Downloads/EE309_PROJECT_1_UPDATED/QUARTUS_PROJECT/RF_Wren.vhd Line: 4
+Info (12021): Found 2 design units, including 1 entities, in source file bit_16reg.vhd
+    Info (12022): Found design unit 1: register_16-r_16 File: D:/Downloads/EE309_PROJECT_1_UPDATED/QUARTUS_PROJECT/bit_16reg.vhd Line: 13
+    Info (12023): Found entity 1: register_16 File: D:/Downloads/EE309_PROJECT_1_UPDATED/QUARTUS_PROJECT/bit_16reg.vhd Line: 4
+Info (12021): Found 2 design units, including 1 entities, in source file extend6to16.vhd
+    Info (12022): Found design unit 1: extend6to16-ex_6to16 File: D:/Downloads/EE309_PROJECT_1_UPDATED/QUARTUS_PROJECT/extend6to16.vhd Line: 11
+    Info (12023): Found entity 1: extend6to16 File: D:/Downloads/EE309_PROJECT_1_UPDATED/QUARTUS_PROJECT/extend6to16.vhd Line: 5
+Info (12021): Found 2 design units, including 1 entities, in source file exten9.vhd
+    Info (12022): Found design unit 1: extend9to16-ex_9to16 File: D:/Downloads/EE309_PROJECT_1_UPDATED/QUARTUS_PROJECT/exten9.vhd Line: 11
+    Info (12023): Found entity 1: extend9to16 File: D:/Downloads/EE309_PROJECT_1_UPDATED/QUARTUS_PROJECT/exten9.vhd Line: 5
+Info (12021): Found 2 design units, including 1 entities, in source file mux21.vhd
+    Info (12022): Found design unit 1: mux2to1-d_mux2to1 File: D:/Downloads/EE309_PROJECT_1_UPDATED/QUARTUS_PROJECT/mux21.vhd Line: 10
+    Info (12023): Found entity 1: mux2to1 File: D:/Downloads/EE309_PROJECT_1_UPDATED/QUARTUS_PROJECT/mux21.vhd Line: 4
+Info (12021): Found 2 design units, including 1 entities, in source file mux31.vhd
+    Info (12022): Found design unit 1: mux3to1-d_mux3to1 File: D:/Downloads/EE309_PROJECT_1_UPDATED/QUARTUS_PROJECT/mux31.vhd Line: 10
+    Info (12023): Found entity 1: mux3to1 File: D:/Downloads/EE309_PROJECT_1_UPDATED/QUARTUS_PROJECT/mux31.vhd Line: 4
+Info (12021): Found 2 design units, including 1 entities, in source file mx41.vhd
+    Info (12022): Found design unit 1: mux4to1-d_mux4to1 File: D:/Downloads/EE309_PROJECT_1_UPDATED/QUARTUS_PROJECT/mx41.vhd Line: 10
+    Info (12023): Found entity 1: mux4to1 File: D:/Downloads/EE309_PROJECT_1_UPDATED/QUARTUS_PROJECT/mx41.vhd Line: 4
+Info (12021): Found 2 design units, including 1 entities, in source file ir.vhd
+    Info (12022): Found design unit 1: inst_register-arch File: D:/Downloads/EE309_PROJECT_1_UPDATED/QUARTUS_PROJECT/ir.vhd Line: 17
+    Info (12023): Found entity 1: inst_register File: D:/Downloads/EE309_PROJECT_1_UPDATED/QUARTUS_PROJECT/ir.vhd Line: 4
+Info (12021): Found 2 design units, including 1 entities, in source file reister_files.vhd
+    Info (12022): Found design unit 1: register_set-arch File: D:/Downloads/EE309_PROJECT_1_UPDATED/QUARTUS_PROJECT/reister_files.vhd Line: 18
+    Info (12023): Found entity 1: register_set File: D:/Downloads/EE309_PROJECT_1_UPDATED/QUARTUS_PROJECT/reister_files.vhd Line: 5
+Info (12021): Found 2 design units, including 1 entities, in source file memory.vhd
+    Info (12022): Found design unit 1: memory-arch File: D:/Downloads/EE309_PROJECT_1_UPDATED/QUARTUS_PROJECT/memory.vhd Line: 19
+    Info (12023): Found entity 1: memory File: D:/Downloads/EE309_PROJECT_1_UPDATED/QUARTUS_PROJECT/memory.vhd Line: 8
+Info (12021): Found 2 design units, including 1 entities, in source file lsi.vhd
+    Info (12022): Found design unit 1: lsi-arch File: D:/Downloads/EE309_PROJECT_1_UPDATED/QUARTUS_PROJECT/lsi.vhd Line: 11
+    Info (12023): Found entity 1: lsi File: D:/Downloads/EE309_PROJECT_1_UPDATED/QUARTUS_PROJECT/lsi.vhd Line: 4
+Info (12127): Elaborating entity "DUT" for the top level hierarchy
+Info (12128): Elaborating entity "datapath" for hierarchy "datapath:processor" File: D:/Downloads/EE309_PROJECT_1_UPDATED/QUARTUS_PROJECT/DUT.vhd Line: 18
+Warning (10541): VHDL Signal Declaration warning at datapath.vhd(159): used implicit default value for signal "carry_flag" because signal was never assigned a value or an explicit default value. Use of implicit default value may introduce unintended design optimizations. File: D:/Downloads/EE309_PROJECT_1_UPDATED/QUARTUS_PROJECT/datapath.vhd Line: 159
+Warning (10036): Verilog HDL or VHDL warning at datapath.vhd(160): object "carry_flag_out" assigned a value but never read File: D:/Downloads/EE309_PROJECT_1_UPDATED/QUARTUS_PROJECT/datapath.vhd Line: 160
+Warning (10541): VHDL Signal Declaration warning at datapath.vhd(162): used implicit default value for signal "reg_set_flag" because signal was never assigned a value or an explicit default value. Use of implicit default value may introduce unintended design optimizations. File: D:/Downloads/EE309_PROJECT_1_UPDATED/QUARTUS_PROJECT/datapath.vhd Line: 162
+Critical Warning (10920): VHDL Incomplete Partial Association warning at datapath.vhd(303): port or argument "zero" has 13/16 unassociated elements File: D:/Downloads/EE309_PROJECT_1_UPDATED/QUARTUS_PROJECT/datapath.vhd Line: 303
+Critical Warning (10920): VHDL Incomplete Partial Association warning at datapath.vhd(303): port or argument "one" has 13/16 unassociated elements File: D:/Downloads/EE309_PROJECT_1_UPDATED/QUARTUS_PROJECT/datapath.vhd Line: 303
+Critical Warning (10920): VHDL Incomplete Partial Association warning at datapath.vhd(303): port or argument "output" has 13/16 unassociated elements File: D:/Downloads/EE309_PROJECT_1_UPDATED/QUARTUS_PROJECT/datapath.vhd Line: 303
+Critical Warning (10920): VHDL Incomplete Partial Association warning at datapath.vhd(310): port or argument "zero" has 13/16 unassociated elements File: D:/Downloads/EE309_PROJECT_1_UPDATED/QUARTUS_PROJECT/datapath.vhd Line: 310
+Critical Warning (10920): VHDL Incomplete Partial Association warning at datapath.vhd(310): port or argument "one" has 13/16 unassociated elements File: D:/Downloads/EE309_PROJECT_1_UPDATED/QUARTUS_PROJECT/datapath.vhd Line: 310
+Critical Warning (10920): VHDL Incomplete Partial Association warning at datapath.vhd(310): port or argument "output" has 13/16 unassociated elements File: D:/Downloads/EE309_PROJECT_1_UPDATED/QUARTUS_PROJECT/datapath.vhd Line: 310
+Critical Warning (10920): VHDL Incomplete Partial Association warning at datapath.vhd(367): port or argument "three" has 13/16 unassociated elements File: D:/Downloads/EE309_PROJECT_1_UPDATED/QUARTUS_PROJECT/datapath.vhd Line: 367
+Critical Warning (10920): VHDL Incomplete Partial Association warning at datapath.vhd(367): port or argument "two" has 13/16 unassociated elements File: D:/Downloads/EE309_PROJECT_1_UPDATED/QUARTUS_PROJECT/datapath.vhd Line: 367
+Critical Warning (10920): VHDL Incomplete Partial Association warning at datapath.vhd(367): port or argument "one" has 13/16 unassociated elements File: D:/Downloads/EE309_PROJECT_1_UPDATED/QUARTUS_PROJECT/datapath.vhd Line: 367
+Critical Warning (10920): VHDL Incomplete Partial Association warning at datapath.vhd(367): port or argument "zero" has 13/16 unassociated elements File: D:/Downloads/EE309_PROJECT_1_UPDATED/QUARTUS_PROJECT/datapath.vhd Line: 367
+Critical Warning (10920): VHDL Incomplete Partial Association warning at datapath.vhd(367): port or argument "output" has 13/16 unassociated elements File: D:/Downloads/EE309_PROJECT_1_UPDATED/QUARTUS_PROJECT/datapath.vhd Line: 367
+Info (12128): Elaborating entity "master_controller" for hierarchy "datapath:processor|master_controller:controller" File: D:/Downloads/EE309_PROJECT_1_UPDATED/QUARTUS_PROJECT/datapath.vhd Line: 199
+Warning (10631): VHDL Process Statement warning at FSM.vhd(32): inferring latch(es) for signal or variable "control_sig", which holds its previous value in one or more paths through the process File: D:/Downloads/EE309_PROJECT_1_UPDATED/QUARTUS_PROJECT/FSM.vhd Line: 32
+Info (10041): Inferred latch for "control_sig[0]" at FSM.vhd(32) File: D:/Downloads/EE309_PROJECT_1_UPDATED/QUARTUS_PROJECT/FSM.vhd Line: 32
+Info (10041): Inferred latch for "control_sig[1]" at FSM.vhd(32) File: D:/Downloads/EE309_PROJECT_1_UPDATED/QUARTUS_PROJECT/FSM.vhd Line: 32
+Info (10041): Inferred latch for "control_sig[2]" at FSM.vhd(32) File: D:/Downloads/EE309_PROJECT_1_UPDATED/QUARTUS_PROJECT/FSM.vhd Line: 32
+Info (10041): Inferred latch for "control_sig[3]" at FSM.vhd(32) File: D:/Downloads/EE309_PROJECT_1_UPDATED/QUARTUS_PROJECT/FSM.vhd Line: 32
+Info (10041): Inferred latch for "control_sig[4]" at FSM.vhd(32) File: D:/Downloads/EE309_PROJECT_1_UPDATED/QUARTUS_PROJECT/FSM.vhd Line: 32
+Info (10041): Inferred latch for "control_sig[5]" at FSM.vhd(32) File: D:/Downloads/EE309_PROJECT_1_UPDATED/QUARTUS_PROJECT/FSM.vhd Line: 32
+Info (10041): Inferred latch for "control_sig[6]" at FSM.vhd(32) File: D:/Downloads/EE309_PROJECT_1_UPDATED/QUARTUS_PROJECT/FSM.vhd Line: 32
+Info (10041): Inferred latch for "control_sig[7]" at FSM.vhd(32) File: D:/Downloads/EE309_PROJECT_1_UPDATED/QUARTUS_PROJECT/FSM.vhd Line: 32
+Info (10041): Inferred latch for "control_sig[8]" at FSM.vhd(32) File: D:/Downloads/EE309_PROJECT_1_UPDATED/QUARTUS_PROJECT/FSM.vhd Line: 32
+Info (10041): Inferred latch for "control_sig[9]" at FSM.vhd(32) File: D:/Downloads/EE309_PROJECT_1_UPDATED/QUARTUS_PROJECT/FSM.vhd Line: 32
+Info (10041): Inferred latch for "control_sig[10]" at FSM.vhd(32) File: D:/Downloads/EE309_PROJECT_1_UPDATED/QUARTUS_PROJECT/FSM.vhd Line: 32
+Info (10041): Inferred latch for "control_sig[11]" at FSM.vhd(32) File: D:/Downloads/EE309_PROJECT_1_UPDATED/QUARTUS_PROJECT/FSM.vhd Line: 32
+Info (10041): Inferred latch for "control_sig[12]" at FSM.vhd(32) File: D:/Downloads/EE309_PROJECT_1_UPDATED/QUARTUS_PROJECT/FSM.vhd Line: 32
+Info (10041): Inferred latch for "control_sig[13]" at FSM.vhd(32) File: D:/Downloads/EE309_PROJECT_1_UPDATED/QUARTUS_PROJECT/FSM.vhd Line: 32
+Info (10041): Inferred latch for "control_sig[14]" at FSM.vhd(32) File: D:/Downloads/EE309_PROJECT_1_UPDATED/QUARTUS_PROJECT/FSM.vhd Line: 32
+Info (10041): Inferred latch for "control_sig[15]" at FSM.vhd(32) File: D:/Downloads/EE309_PROJECT_1_UPDATED/QUARTUS_PROJECT/FSM.vhd Line: 32
+Info (10041): Inferred latch for "control_sig[16]" at FSM.vhd(32) File: D:/Downloads/EE309_PROJECT_1_UPDATED/QUARTUS_PROJECT/FSM.vhd Line: 32
+Info (10041): Inferred latch for "control_sig[17]" at FSM.vhd(32) File: D:/Downloads/EE309_PROJECT_1_UPDATED/QUARTUS_PROJECT/FSM.vhd Line: 32
+Info (10041): Inferred latch for "control_sig[18]" at FSM.vhd(32) File: D:/Downloads/EE309_PROJECT_1_UPDATED/QUARTUS_PROJECT/FSM.vhd Line: 32
+Info (10041): Inferred latch for "control_sig[19]" at FSM.vhd(32) File: D:/Downloads/EE309_PROJECT_1_UPDATED/QUARTUS_PROJECT/FSM.vhd Line: 32
+Info (10041): Inferred latch for "control_sig[20]" at FSM.vhd(32) File: D:/Downloads/EE309_PROJECT_1_UPDATED/QUARTUS_PROJECT/FSM.vhd Line: 32
+Info (10041): Inferred latch for "control_sig[21]" at FSM.vhd(32) File: D:/Downloads/EE309_PROJECT_1_UPDATED/QUARTUS_PROJECT/FSM.vhd Line: 32
+Info (10041): Inferred latch for "control_sig[22]" at FSM.vhd(32) File: D:/Downloads/EE309_PROJECT_1_UPDATED/QUARTUS_PROJECT/FSM.vhd Line: 32
+Info (10041): Inferred latch for "control_sig[23]" at FSM.vhd(32) File: D:/Downloads/EE309_PROJECT_1_UPDATED/QUARTUS_PROJECT/FSM.vhd Line: 32
+Info (10041): Inferred latch for "control_sig[24]" at FSM.vhd(32) File: D:/Downloads/EE309_PROJECT_1_UPDATED/QUARTUS_PROJECT/FSM.vhd Line: 32
+Info (10041): Inferred latch for "control_sig[25]" at FSM.vhd(32) File: D:/Downloads/EE309_PROJECT_1_UPDATED/QUARTUS_PROJECT/FSM.vhd Line: 32
+Info (10041): Inferred latch for "control_sig[26]" at FSM.vhd(32) File: D:/Downloads/EE309_PROJECT_1_UPDATED/QUARTUS_PROJECT/FSM.vhd Line: 32
+Info (10041): Inferred latch for "control_sig[27]" at FSM.vhd(32) File: D:/Downloads/EE309_PROJECT_1_UPDATED/QUARTUS_PROJECT/FSM.vhd Line: 32
+Info (12128): Elaborating entity "inst_register" for hierarchy "datapath:processor|inst_register:instruction_recorder" File: D:/Downloads/EE309_PROJECT_1_UPDATED/QUARTUS_PROJECT/datapath.vhd Line: 216
+Info (12128): Elaborating entity "register_set" for hierarchy "datapath:processor|register_set:register_file" File: D:/Downloads/EE309_PROJECT_1_UPDATED/QUARTUS_PROJECT/datapath.vhd Line: 228
+Warning (10541): VHDL Signal Declaration warning at reister_files.vhd(28): used implicit default value for signal "signal_a1" because signal was never assigned a value or an explicit default value. Use of implicit default value may introduce unintended design optimizations. File: D:/Downloads/EE309_PROJECT_1_UPDATED/QUARTUS_PROJECT/reister_files.vhd Line: 28
+Warning (10541): VHDL Signal Declaration warning at reister_files.vhd(29): used implicit default value for signal "signal_a3" because signal was never assigned a value or an explicit default value. Use of implicit default value may introduce unintended design optimizations. File: D:/Downloads/EE309_PROJECT_1_UPDATED/QUARTUS_PROJECT/reister_files.vhd Line: 29
+Warning (10541): VHDL Signal Declaration warning at reister_files.vhd(30): used implicit default value for signal "signal_a2" because signal was never assigned a value or an explicit default value. Use of implicit default value may introduce unintended design optimizations. File: D:/Downloads/EE309_PROJECT_1_UPDATED/QUARTUS_PROJECT/reister_files.vhd Line: 30
+Warning (10036): Verilog HDL or VHDL warning at reister_files.vhd(32): object "data_1" assigned a value but never read File: D:/Downloads/EE309_PROJECT_1_UPDATED/QUARTUS_PROJECT/reister_files.vhd Line: 32
+Warning (10036): Verilog HDL or VHDL warning at reister_files.vhd(33): object "data_2" assigned a value but never read File: D:/Downloads/EE309_PROJECT_1_UPDATED/QUARTUS_PROJECT/reister_files.vhd Line: 33
+Warning (10036): Verilog HDL or VHDL warning at reister_files.vhd(34): object "data_3" assigned a value but never read File: D:/Downloads/EE309_PROJECT_1_UPDATED/QUARTUS_PROJECT/reister_files.vhd Line: 34
+Warning (10036): Verilog HDL or VHDL warning at reister_files.vhd(35): object "data_4" assigned a value but never read File: D:/Downloads/EE309_PROJECT_1_UPDATED/QUARTUS_PROJECT/reister_files.vhd Line: 35
+Warning (10036): Verilog HDL or VHDL warning at reister_files.vhd(36): object "data_5" assigned a value but never read File: D:/Downloads/EE309_PROJECT_1_UPDATED/QUARTUS_PROJECT/reister_files.vhd Line: 36
+Warning (10036): Verilog HDL or VHDL warning at reister_files.vhd(37): object "data_6" assigned a value but never read File: D:/Downloads/EE309_PROJECT_1_UPDATED/QUARTUS_PROJECT/reister_files.vhd Line: 37
+Warning (10036): Verilog HDL or VHDL warning at reister_files.vhd(38): object "data_7" assigned a value but never read File: D:/Downloads/EE309_PROJECT_1_UPDATED/QUARTUS_PROJECT/reister_files.vhd Line: 38
+Warning (10036): Verilog HDL or VHDL warning at reister_files.vhd(39): object "data_0" assigned a value but never read File: D:/Downloads/EE309_PROJECT_1_UPDATED/QUARTUS_PROJECT/reister_files.vhd Line: 39
+Warning (10631): VHDL Process Statement warning at reister_files.vhd(113): inferring latch(es) for signal or variable "d_1", which holds its previous value in one or more paths through the process File: D:/Downloads/EE309_PROJECT_1_UPDATED/QUARTUS_PROJECT/reister_files.vhd Line: 113
+Warning (10631): VHDL Process Statement warning at reister_files.vhd(113): inferring latch(es) for signal or variable "d_2", which holds its previous value in one or more paths through the process File: D:/Downloads/EE309_PROJECT_1_UPDATED/QUARTUS_PROJECT/reister_files.vhd Line: 113
+Info (10041): Inferred latch for "d_2[0]" at reister_files.vhd(113) File: D:/Downloads/EE309_PROJECT_1_UPDATED/QUARTUS_PROJECT/reister_files.vhd Line: 113
+Info (10041): Inferred latch for "d_2[1]" at reister_files.vhd(113) File: D:/Downloads/EE309_PROJECT_1_UPDATED/QUARTUS_PROJECT/reister_files.vhd Line: 113
+Info (10041): Inferred latch for "d_2[2]" at reister_files.vhd(113) File: D:/Downloads/EE309_PROJECT_1_UPDATED/QUARTUS_PROJECT/reister_files.vhd Line: 113
+Info (10041): Inferred latch for "d_2[3]" at reister_files.vhd(113) File: D:/Downloads/EE309_PROJECT_1_UPDATED/QUARTUS_PROJECT/reister_files.vhd Line: 113
+Info (10041): Inferred latch for "d_2[4]" at reister_files.vhd(113) File: D:/Downloads/EE309_PROJECT_1_UPDATED/QUARTUS_PROJECT/reister_files.vhd Line: 113
+Info (10041): Inferred latch for "d_2[5]" at reister_files.vhd(113) File: D:/Downloads/EE309_PROJECT_1_UPDATED/QUARTUS_PROJECT/reister_files.vhd Line: 113
+Info (10041): Inferred latch for "d_2[6]" at reister_files.vhd(113) File: D:/Downloads/EE309_PROJECT_1_UPDATED/QUARTUS_PROJECT/reister_files.vhd Line: 113
+Info (10041): Inferred latch for "d_2[7]" at reister_files.vhd(113) File: D:/Downloads/EE309_PROJECT_1_UPDATED/QUARTUS_PROJECT/reister_files.vhd Line: 113
+Info (10041): Inferred latch for "d_2[8]" at reister_files.vhd(113) File: D:/Downloads/EE309_PROJECT_1_UPDATED/QUARTUS_PROJECT/reister_files.vhd Line: 113
+Info (10041): Inferred latch for "d_2[9]" at reister_files.vhd(113) File: D:/Downloads/EE309_PROJECT_1_UPDATED/QUARTUS_PROJECT/reister_files.vhd Line: 113
+Info (10041): Inferred latch for "d_2[10]" at reister_files.vhd(113) File: D:/Downloads/EE309_PROJECT_1_UPDATED/QUARTUS_PROJECT/reister_files.vhd Line: 113
+Info (10041): Inferred latch for "d_2[11]" at reister_files.vhd(113) File: D:/Downloads/EE309_PROJECT_1_UPDATED/QUARTUS_PROJECT/reister_files.vhd Line: 113
+Info (10041): Inferred latch for "d_2[12]" at reister_files.vhd(113) File: D:/Downloads/EE309_PROJECT_1_UPDATED/QUARTUS_PROJECT/reister_files.vhd Line: 113
+Info (10041): Inferred latch for "d_2[13]" at reister_files.vhd(113) File: D:/Downloads/EE309_PROJECT_1_UPDATED/QUARTUS_PROJECT/reister_files.vhd Line: 113
+Info (10041): Inferred latch for "d_2[14]" at reister_files.vhd(113) File: D:/Downloads/EE309_PROJECT_1_UPDATED/QUARTUS_PROJECT/reister_files.vhd Line: 113
+Info (10041): Inferred latch for "d_2[15]" at reister_files.vhd(113) File: D:/Downloads/EE309_PROJECT_1_UPDATED/QUARTUS_PROJECT/reister_files.vhd Line: 113
+Info (10041): Inferred latch for "d_1[0]" at reister_files.vhd(113) File: D:/Downloads/EE309_PROJECT_1_UPDATED/QUARTUS_PROJECT/reister_files.vhd Line: 113
+Info (10041): Inferred latch for "d_1[1]" at reister_files.vhd(113) File: D:/Downloads/EE309_PROJECT_1_UPDATED/QUARTUS_PROJECT/reister_files.vhd Line: 113
+Info (10041): Inferred latch for "d_1[2]" at reister_files.vhd(113) File: D:/Downloads/EE309_PROJECT_1_UPDATED/QUARTUS_PROJECT/reister_files.vhd Line: 113
+Info (10041): Inferred latch for "d_1[3]" at reister_files.vhd(113) File: D:/Downloads/EE309_PROJECT_1_UPDATED/QUARTUS_PROJECT/reister_files.vhd Line: 113
+Info (10041): Inferred latch for "d_1[4]" at reister_files.vhd(113) File: D:/Downloads/EE309_PROJECT_1_UPDATED/QUARTUS_PROJECT/reister_files.vhd Line: 113
+Info (10041): Inferred latch for "d_1[5]" at reister_files.vhd(113) File: D:/Downloads/EE309_PROJECT_1_UPDATED/QUARTUS_PROJECT/reister_files.vhd Line: 113
+Info (10041): Inferred latch for "d_1[6]" at reister_files.vhd(113) File: D:/Downloads/EE309_PROJECT_1_UPDATED/QUARTUS_PROJECT/reister_files.vhd Line: 113
+Info (10041): Inferred latch for "d_1[7]" at reister_files.vhd(113) File: D:/Downloads/EE309_PROJECT_1_UPDATED/QUARTUS_PROJECT/reister_files.vhd Line: 113
+Info (10041): Inferred latch for "d_1[8]" at reister_files.vhd(113) File: D:/Downloads/EE309_PROJECT_1_UPDATED/QUARTUS_PROJECT/reister_files.vhd Line: 113
+Info (10041): Inferred latch for "d_1[9]" at reister_files.vhd(113) File: D:/Downloads/EE309_PROJECT_1_UPDATED/QUARTUS_PROJECT/reister_files.vhd Line: 113
+Info (10041): Inferred latch for "d_1[10]" at reister_files.vhd(113) File: D:/Downloads/EE309_PROJECT_1_UPDATED/QUARTUS_PROJECT/reister_files.vhd Line: 113
+Info (10041): Inferred latch for "d_1[11]" at reister_files.vhd(113) File: D:/Downloads/EE309_PROJECT_1_UPDATED/QUARTUS_PROJECT/reister_files.vhd Line: 113
+Info (10041): Inferred latch for "d_1[12]" at reister_files.vhd(113) File: D:/Downloads/EE309_PROJECT_1_UPDATED/QUARTUS_PROJECT/reister_files.vhd Line: 113
+Info (10041): Inferred latch for "d_1[13]" at reister_files.vhd(113) File: D:/Downloads/EE309_PROJECT_1_UPDATED/QUARTUS_PROJECT/reister_files.vhd Line: 113
+Info (10041): Inferred latch for "d_1[14]" at reister_files.vhd(113) File: D:/Downloads/EE309_PROJECT_1_UPDATED/QUARTUS_PROJECT/reister_files.vhd Line: 113
+Info (10041): Inferred latch for "d_1[15]" at reister_files.vhd(113) File: D:/Downloads/EE309_PROJECT_1_UPDATED/QUARTUS_PROJECT/reister_files.vhd Line: 113
+Info (12128): Elaborating entity "register_16" for hierarchy "datapath:processor|register_set:register_file|register_16:register_0" File: D:/Downloads/EE309_PROJECT_1_UPDATED/QUARTUS_PROJECT/reister_files.vhd Line: 46
+Info (12128): Elaborating entity "memory" for hierarchy "datapath:processor|memory:memory_element" File: D:/Downloads/EE309_PROJECT_1_UPDATED/QUARTUS_PROJECT/datapath.vhd Line: 241
+Info (12128): Elaborating entity "alu" for hierarchy "datapath:processor|alu:alu_element" File: D:/Downloads/EE309_PROJECT_1_UPDATED/QUARTUS_PROJECT/datapath.vhd Line: 283
+Info (12128): Elaborating entity "adder" for hierarchy "datapath:processor|alu:alu_element|adder:ADD0" File: D:/Downloads/EE309_PROJECT_1_UPDATED/QUARTUS_PROJECT/alu.vhdl Line: 22
+Info (12128): Elaborating entity "full_adder" for hierarchy "datapath:processor|alu:alu_element|adder:ADD0|full_adder:\adder_element:0:ADDX" File: D:/Downloads/EE309_PROJECT_1_UPDATED/QUARTUS_PROJECT/adder.vhdl Line: 103
+Info (12128): Elaborating entity "carry_generater" for hierarchy "datapath:processor|alu:alu_element|adder:ADD0|carry_generater:\carry_element:0:CARRYX" File: D:/Downloads/EE309_PROJECT_1_UPDATED/QUARTUS_PROJECT/adder.vhdl Line: 110
+Info (12128): Elaborating entity "Reg_sel" for hierarchy "datapath:processor|Reg_sel:register_selector" File: D:/Downloads/EE309_PROJECT_1_UPDATED/QUARTUS_PROJECT/datapath.vhd Line: 296
+Info (12128): Elaborating entity "mux2to1" for hierarchy "datapath:processor|mux2to1:a1_mux" File: D:/Downloads/EE309_PROJECT_1_UPDATED/QUARTUS_PROJECT/datapath.vhd Line: 303
+Info (12128): Elaborating entity "mux3to1" for hierarchy "datapath:processor|mux3to1:rs_data_mux" File: D:/Downloads/EE309_PROJECT_1_UPDATED/QUARTUS_PROJECT/datapath.vhd Line: 339
+Info (12128): Elaborating entity "mux4to1" for hierarchy "datapath:processor|mux4to1:a3_mux" File: D:/Downloads/EE309_PROJECT_1_UPDATED/QUARTUS_PROJECT/datapath.vhd Line: 367
+Info (12128): Elaborating entity "lsi" for hierarchy "datapath:processor|lsi:lsi_element" File: D:/Downloads/EE309_PROJECT_1_UPDATED/QUARTUS_PROJECT/datapath.vhd Line: 386
+Info (12128): Elaborating entity "extend9to16" for hierarchy "datapath:processor|extend9to16:sign_9_element" File: D:/Downloads/EE309_PROJECT_1_UPDATED/QUARTUS_PROJECT/datapath.vhd Line: 391
+Info (12128): Elaborating entity "extend6to16" for hierarchy "datapath:processor|extend6to16:sign_6_element" File: D:/Downloads/EE309_PROJECT_1_UPDATED/QUARTUS_PROJECT/datapath.vhd Line: 396
+Info: Quartus Prime Analysis & Elaboration was successful. 0 errors, 29 warnings
+    Info: Peak virtual memory: 4755 megabytes
+    Info: Processing ended: Sat May 07 23:32:55 2022
+    Info: Elapsed time: 00:00:10
+    Info: Total CPU time (on all processors): 00:00:27
+
+
